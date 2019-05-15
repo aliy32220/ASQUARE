@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="410.0" prefWidth="736.0" style="-fx-background-color: #080808;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="asquare.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="84.0" fitWidth="88.0" layoutX="653.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/am-a-19-year-old-multimedia-artist-student-from-manila--21.png" />
+         </image>
+      </ImageView>
+      <TabPane prefHeight="410.0" prefWidth="656.0" style="-fx-border-color: #080808; -fx-background-color: #580201;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Buy Property">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="7.0" layoutY="14.0" prefHeight="18.0" prefWidth="143.0" style="-fx-text-fill: #FFFFFF;" text="Add Requirements" />
+                        <TextField id="City" fx:id="City" layoutX="3.0" layoutY="66.0" style="-fx-background-color: #BEBEBE;" />
+                        <TextField id="Area" fx:id="Area" layoutX="3.0" layoutY="130.0" style="-fx-background-color: #BEBEBE;" />
+                        <Label layoutX="7.0" layoutY="48.0" prefHeight="18.0" prefWidth="143.0" style="-fx-text-fill: #FFFFFF;" text="Enter City" />
+                        <Label layoutX="7.0" layoutY="112.0" prefHeight="18.0" prefWidth="143.0" style="-fx-text-fill: #FFFFFF;" text="Enter Area" />
+                        <Label layoutX="7.0" layoutY="174.0" prefHeight="18.0" prefWidth="143.0" style="-fx-text-fill: #FFFFFF;" text="Enter Price Range" />
+                        <TextField id="PriceRange_min" fx:id="PriceRange_min" layoutX="50.0" layoutY="201.0" style="-fx-background-color: #BEBEBE;" />
+                        <TextField id="PriceRange_max" fx:id="PriceRange_max" layoutX="240.0" layoutY="201.0" style="-fx-background-color: #BEBEBE;" />
+                        <Label layoutX="214.0" layoutY="205.0" prefHeight="18.0" prefWidth="19.0" style="-fx-text-fill: #FFFFFF;" text="to" />
+                        <Label layoutX="3.0" layoutY="205.0" prefHeight="18.0" prefWidth="41.0" style="-fx-text-fill: #FFFFFF;" text="From" />
+                        <Label layoutX="7.0" layoutY="246.0" prefHeight="18.0" prefWidth="143.0" style="-fx-text-fill: #FFFFFF;" text="Enter Plot Size" />
+                        <Label layoutX="3.0" layoutY="275.0" prefHeight="18.0" prefWidth="41.0" style="-fx-text-fill: #FFFFFF;" text="From" />
+                        <TextField id="PlotSize_min" fx:id="PlotSize_min" layoutX="50.0" layoutY="271.0" style="-fx-background-color: #BEBEBE;" />
+                        <Label layoutX="214.0" layoutY="275.0" prefHeight="18.0" prefWidth="19.0" style="-fx-text-fill: #FFFFFF;" text="to" />
+                        <TextField id="PlotSize_max" fx:id="PlotSize_max" layoutX="240.0" layoutY="271.0" style="-fx-background-color: #BEBEBE;" />
+                        <Button fx:id="btn1" layoutX="471.0" layoutY="248.0" mnemonicParsing="false" onAction="#handleSearchButtonAction" prefHeight="32.0" prefWidth="144.0" style="-fx-background-color: #080808;" text="Search Property" />
+                        <TextArea id="ResultArea" fx:id="ResultArea" layoutX="409.0" layoutY="43.0" prefHeight="200.0" prefWidth="245.0" style="-fx-background-color: #BEBEBE;" />
+                        <Label layoutX="409.0" layoutY="23.0" prefHeight="18.0" prefWidth="143.0" style="-fx-text-fill: #FFFFFF;" text="Search Result" />
+                        <TextField id="City" fx:id="P_id" layoutX="468.0" layoutY="308.0" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: #BEBEBE;" />
+                        <Label layoutX="279.0" layoutY="312.0" prefHeight="18.0" prefWidth="181.0" style="-fx-text-fill: #FFFFFF;" text="Enter P_id here to Start a Deal" />
+                        <Button fx:id="btn12" layoutX="543.0" layoutY="307.0" mnemonicParsing="false" onAction="#handleSubmitButtonAction" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #080808;" text="Submit" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Assign Advisor">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TextArea id="ResultArea" fx:id="ResultArea1" layoutX="377.0" layoutY="49.0" prefHeight="200.0" prefWidth="245.0" style="-fx-background-color: #BEBEBE;" />
+                        <Label layoutX="377.0" layoutY="31.0" prefHeight="18.0" prefWidth="84.0" style="-fx-text-fill: #FFFFFF;" text="Advisors List" />
+                        <Label layoutX="14.0" layoutY="31.0" prefHeight="18.0" prefWidth="165.0" style="-fx-text-fill: #FFFFFF;" text="Enter Advisor ID to Assign" />
+                        <TextField id="PlotSize_min" fx:id="PlotSize_min1" layoutX="14.0" layoutY="49.0" style="-fx-background-color: #BEBEBE;" />
+                        <Button fx:id="btn122" layoutX="179.0" layoutY="47.0" mnemonicParsing="false" onAction="#handleSubmitButtonAction" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #080808;" text="Done" />
+                        <Button fx:id="btn1221" layoutX="531.0" layoutY="249.0" mnemonicParsing="false" onAction="#handleSubmitButtonAction" prefHeight="30.0" prefWidth="91.0" style="-fx-background-color: #080808;" text="Show List" />
+                     </children></AnchorPane>
+               </content></Tab>
+            <Tab text="Sell Property">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="7.0" layoutY="14.0" prefHeight="18.0" prefWidth="143.0" style="-fx-text-fill: #FFFFFF;" text="Enter Specifications" />
+                        <TextField id="City" fx:id="City1" layoutX="3.0" layoutY="66.0" style="-fx-background-color: #BEBEBE;" />
+                        <TextField id="Area" fx:id="Area1" layoutX="3.0" layoutY="130.0" style="-fx-background-color: #BEBEBE;" />
+                        <Label layoutX="7.0" layoutY="48.0" prefHeight="18.0" prefWidth="143.0" style="-fx-text-fill: #FFFFFF;" text="Enter City" />
+                        <Label layoutX="7.0" layoutY="112.0" prefHeight="18.0" prefWidth="143.0" style="-fx-text-fill: #FFFFFF;" text="Enter Area" />
+                        <Label layoutX="7.0" layoutY="174.0" prefHeight="18.0" prefWidth="143.0" style="-fx-text-fill: #FFFFFF;" text="Enter Price" />
+                        <TextField id="PriceRange_min" fx:id="Price1" layoutX="3.0" layoutY="192.0" style="-fx-background-color: #BEBEBE;" />
+                        <Label layoutX="7.0" layoutY="230.0" prefHeight="18.0" prefWidth="143.0" style="-fx-text-fill: #FFFFFF;" text="Enter Plot " />
+                        <TextField id="PlotSize_min" fx:id="Plot1" layoutX="3.0" layoutY="248.0" style="-fx-background-color: #BEBEBE;" />
+                        <Button fx:id="btn121" layoutX="271.0" layoutY="246.0" mnemonicParsing="false" onAction="#handleAddButtonAction" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #080808;" text="Add" />
+                        <Label layoutX="280.0" layoutY="48.0" prefHeight="18.0" prefWidth="143.0" style="-fx-text-fill: #FFFFFF;" text="Enter Email" />
+                        <TextField id="City" fx:id="Seller_Email" layoutX="280.0" layoutY="66.0" style="-fx-background-color: #BEBEBE;" />
+                        <Label layoutX="280.0" layoutY="112.0" prefHeight="18.0" prefWidth="143.0" style="-fx-text-fill: #FFFFFF;" text="Enter Phone Number" />
+                        <TextField id="Area" fx:id="Phone1" layoutX="280.0" layoutY="130.0" style="-fx-background-color: #BEBEBE;" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Deal">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TextArea fx:id="Buyer_Area" layoutX="14.0" layoutY="40.0" prefHeight="110.0" prefWidth="270.0" />
+                        <TextArea fx:id="Property_Area" layoutX="14.0" layoutY="174.0" prefHeight="110.0" prefWidth="270.0" />
+                        <TextArea fx:id="Seller_Area" layoutX="327.0" layoutY="40.0" prefHeight="110.0" prefWidth="270.0" />
+                        <TextArea fx:id="Price_Area" layoutX="327.0" layoutY="174.0" prefHeight="110.0" prefWidth="270.0" />
+                        <Button fx:id="btn1222" layoutX="244.0" layoutY="297.0" mnemonicParsing="false" onAction="#handleDoneButtonAction" prefHeight="30.0" prefWidth="114.0" style="-fx-background-color: #080808;" text="Make Payment" />
+                        <Label layoutX="21.0" layoutY="22.0" prefHeight="18.0" prefWidth="84.0" style="-fx-text-fill: #FFFFFF;" text="Buyer" />
+                        <Label layoutX="334.0" layoutY="22.0" prefHeight="18.0" prefWidth="84.0" style="-fx-text-fill: #FFFFFF;" text="Seller" />
+                        <Label layoutX="21.0" layoutY="156.0" prefHeight="18.0" prefWidth="84.0" style="-fx-text-fill: #FFFFFF;" text="Property" />
+                        <Label layoutX="334.0" layoutY="156.0" prefHeight="18.0" prefWidth="84.0" style="-fx-text-fill: #FFFFFF;" text="Price" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button fx:id="btn1" layoutX="660.0" layoutY="367.0" mnemonicParsing="false" onAction="#handleSignoutButtonAction" prefHeight="37.0" prefWidth="70.0" style="-fx-background-color: #580201;" text="Sign Out" />
+   </children>
+</AnchorPane>

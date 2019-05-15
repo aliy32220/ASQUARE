@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="403.0" prefWidth="758.0" style="-fx-background-color: #080808;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="asquare.FXMLDocumentController">
+    <children>
+      <ImageView fitHeight="424.0" fitWidth="758.0" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane layoutY="1.0" prefHeight="422.0" prefWidth="640.0" style="-fx-background-color: #080808;">
+         <children>
+            <ImageView fitHeight="429.0" fitWidth="672.0" layoutX="-4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/8354cf84ef66cf723189485abefa894f.jpg" />
+               </image>
+            </ImageView>
+            <TextField id="First_Name" fx:id="First_Name" layoutX="207.0" layoutY="131.0" prefHeight="25.0" prefWidth="198.0" promptText="First Name" style="-fx-background-color: #080808;" />
+            <TextField id="Last_Name" fx:id="Last_Name" layoutX="442.0" layoutY="131.0" prefHeight="25.0" prefWidth="198.0" promptText="Last Name" style="-fx-background-color: #080808;" />
+            <TextField id="Age" fx:id="Age" layoutX="207.0" layoutY="187.0" prefHeight="25.0" prefWidth="198.0" promptText="Age" style="-fx-background-color: #080808;" />
+            <Label layoutX="382.0" layoutY="57.0" text="Signup">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.2952380952380952" endY="1.0" startX="0.28095238095238095">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="207.0" layoutY="104.0" prefHeight="27.0" prefWidth="160.0" text="Basic Information" textFill="#e1d8d8">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField id="SignUp_Email" fx:id="SignUp_Email" layoutX="207.0" layoutY="238.0" prefHeight="25.0" prefWidth="198.0" promptText="Email ID" style="-fx-background-color: #080808;" />
+            <TextField id="SignUp_Password" fx:id="SignUp_Password" layoutX="442.0" layoutY="238.0" prefHeight="25.0" prefWidth="198.0" promptText="Password" style="-fx-background-color: #080808;" />
+            <TextField id="Phone_Number" fx:id="Phone_Number" layoutX="442.0" layoutY="187.0" prefHeight="25.0" prefWidth="198.0" promptText="Phone Number" style="-fx-background-color: #080808;" />
+            <Label layoutX="14.0" layoutY="12.0" text="A-SQUARE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.3142857142857142" endY="0.6428571428571428" startX="0.30952380952380953" startY="0.13333333333333333">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <CheckBox fx:id="Check1" layoutX="269.0" layoutY="328.0" mnemonicParsing="false" text="Dealer" textFill="WHITE" />
+            <CheckBox fx:id="Check2" layoutX="207.0" layoutY="328.0" mnemonicParsing="false" text="User" textFill="WHITE" />
+            <CheckBox fx:id="Check3" layoutX="337.0" layoutY="328.0" mnemonicParsing="false" text="Advisor" textFill="WHITE" />
+            <TextField id="SignUp_Email" fx:id="Bank_Account" layoutX="207.0" layoutY="291.0" prefHeight="25.0" prefWidth="198.0" promptText="Bank Account Number" style="-fx-background-color: #080808;" />
+            <TextField id="SignUp_Email" fx:id="Current_Balance" layoutX="442.0" layoutY="291.0" prefHeight="25.0" prefWidth="198.0" promptText="Current Balance" style="-fx-background-color: #080808;" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="btn1" layoutX="668.0" layoutY="385.0" mnemonicParsing="false" onAction="#handleSignupButtonAction2" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: #800203;" text="Signup" textFill="WHITE" />
+   </children>
+</AnchorPane>
